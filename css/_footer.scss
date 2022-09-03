@@ -1,0 +1,51 @@
+.footer {
+    margin-top: 1rem;
+    &__att {
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        flex-direction: column;
+        color: $text;
+        font-size: .5rem;
+    }
+
+    &__mentor {
+        text-decoration: none;
+        color: $cyan;
+        font-size: .5rem;     
+    }
+}
+
+
+.neon {
+	font-family: 'Londrina Outline', cursive;
+	font-size: 3rem;
+    font-weight: $weight-600;
+	color: #fff;
+	letter-spacing: .5rem;
+	text-align: center;
+	text-transform: uppercase;
+    text-decoration: none;
+	text-shadow: 0 0 5px $text-footer,
+		0 0 10px $text-footer,
+		0 0 20px $text-footer,
+		0 0 40px $text-footer,
+		0 0 80px $text-footer,
+		0 0 100px $text-footer,
+		0 0 120px $text-footer;
+	animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+	80%, 90%, 99% {
+		opacity: 1;
+	}
+	
+	85%, 87%, 96%, 98% {
+		opacity: .2;
+	}
+	
+	86%, 89%, 97% {
+		opacity: .8;
+	}
+}

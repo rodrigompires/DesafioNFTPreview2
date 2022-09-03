@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 18.2rem;
+    background-color: $mainbcard;
+    padding: 1.5rem 1.4rem 1.5rem 1.4rem;
+    border-radius: 15px;
+
+
+
+
+
+    .frame {
+        width: 15.4rem;
+        height: 15.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        background: $background-frame;
+
+        margin-bottom: 1.2rem;
+
+
+        &:hover {
+            transform: rotate(90deg);
+            border-radius: 50%;
+        }
+
+
+        &__dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $text;
+            margin-top: 5px;
+            -webkit-box-reflect: below 19px linear-gradient(transparent, rgba(255, 255, 255, .05));
+        }
+
+        &-20 {
+            -webkit-box-reflect: below 300px linear-gradient(transparent, rgba(255, 255, 255, .2));
+        }
+
+    }
+
+    .title {
+        width: 100%;
+        margin-bottom: .5rem;
+
+        &__text {
+            color: $text;
+            font-size: 1.22rem;
+
+            &:hover {
+                color: $cyan;
+                animation: text .01s ease infinite;
+            }
+        }
+    }
+
+    .text {
+        width: 100%;
+        color: $text-blue;
+        margin-bottom: 15px;
+
+        &__p {
+            font-size: .89rem;
+            line-height: 1.5rem;
+            position: relative;
+        }
+        
+    }
+
+    .infos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 17px;
+
+
+        &__price {
+            color: $cyan;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            perspective: 500px;
+
+            &:hover .infos__icon {
+                animation: icons 5s ease infinite;
+            }
+        }
+
+        &__eth {
+            font-size: .86rem;
+
+        }
+
+        &__clock {
+            color: $soft-blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            perspective: 500px;
+
+
+            &:hover .clock__icon {
+                animation: icons 5s ease infinite;
+            }
+
+        }
+
+        &__day {
+            font-size: .86rem;
+
+        }
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: $line;
+        margin-bottom: 15px;
+    }
+}
+

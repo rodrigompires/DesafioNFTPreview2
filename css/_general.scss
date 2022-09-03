@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline');
+
+
+
+// Tipografia
+
+$fontfamily: 'Outfit',
+sans-serif;
+$weight-300: 300;
+$weight-400: 400;
+$weight-600: 600;
+$fontsize: 18px;
+
+
+// Cores
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+$mainbg: hsl(217, 54%, 11%);
+$mainbcard: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$text: hsl(0, 0%, 100%);
+$text-blue: #7287A4;
+
+$text-footer: #ff7bac;
+
+
+// Animação
+
+$duration: 60;
+$dots: 20;
+$swing: 10;
+$speed: 0.5s;
+
+$background-frame: linear-gradient(to top right, #0b4481 0%, #0f4784 25%, #001832 100%);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontfamily;
+    font-size: $fontsize;
+    transition: all .8s linear;
+
+}
+
+body {
+    margin: 0 auto;
+    min-width: 375px;
+    max-width: 1440px;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: linear-gradient(45deg, $mainbcard, $mainbg, $cyan);
+    background-size: 200% 200%;
+
+    animation: background 15s infinite;
+
+
+
+}
+
+
